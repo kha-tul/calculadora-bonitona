@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="calculos.css">
+</head>
+<body>
+<h3>Calculadora Bonitona</h3>
+<form name="calcs">
+<table border=9>
+<tr>
+<td colspan="4">
+<input type="text" name="display" id="calculos" value="" readonly>
+</td>
+</tr>
+<td><input type="button" value="0" onclick="calcs.display.value='0'">
+</td>
+<td><input type="button" value="1" onclick="calcs.display.value+='1'"></td>
+<td><input type="button" value="2" onclick="calcs.display.value+='2'"></td>
+<td><input type="button" class="operator" name="mais" value="+" onclick="calcs.display.value+='+'"></td>
+<tr>
+<td><input type="button" value="3" onclick="calcs.display.value+='3'"></td>
+<td><input type="button" value="4" onclick="calcs.display.value+='4'"></td>
+<td><input type="button" value="5" onclick="calcs.display.value+='5'"></td>
+<td><input type="button" class="operator" name="menos" value="-" onclick="calcs.display.value+='-'"></td>
+</tr><tr>
+<td><input type="button" value="6" onclick="calcs.display.value+='6'"></td>
+<td><input type="button" value="7" onclick="calcs.display.value+='7'"></td>
+<td><input type="button" value="8" onclick="calcs.display.value+='8'"></td>
+<td><input type="button" class="operator" name="times" value="*" onclick="calcs.display.value+='*'"></td>
+</tr><tr>
+<td><input type="button" value="9" onclick="calcs.display.value+='9'"></td>
+<td><input type="button" id="clear" name="clear" value="c" onclick="calcs.display.value=''"></td>
+<td><input type="button" class="operator" name="equal" value="=" onclick="calcs.display.value 
+=eval(calcs.display.value)"></td>
+<td><input type="button" class="operator" name="div" value="/" onclick="calcs.display.value+='/'"></td>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
